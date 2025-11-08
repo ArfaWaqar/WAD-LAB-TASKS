@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+<p id="Text" value="Life Goes On!">Life Goes On!</p>
+<br><br>
+
+<button onclick="getAttr()">Get Text</button>
+<button onclick="setAttr()">Change Text</button>
+
+<script>
+function getAttr() {
+    let text = document.getElementById("Text");
+    let value = text.getAttribute("value");
+    alert("Value attribute is: " + value);
+}
+
+function setAttr() {
+    let text = document.getElementById("Text");
+    text.setAttribute("value", "Life Goes On In Every Situation!");
+    text.textContent = "Life Goes On In Every Situation!";
+}
+</script>
+
+</body>
+</html>

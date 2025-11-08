@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Button</title>
+</head>
+<body>
+     <img src="/icon.png" class="bounce" alt="Bouncing Image">
+     <style>
+    
+.pic {
+      transition: transform 0.5s;
+      margin: 20px;
+    }
+    .pic:hover {
+      transform: scale(1.2);
+    }
+     @keyframes bounce {
+      0%{transform: rotate(40deg);}
+      50% {transform: rotate(90deg);}
+      75%{transform:rotate(180deg)}
+      85%{transform:rotate(270deg)}
+      95%{transform:rotate(360deg)}
+
+      
+    }
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+
+</style>
+    
+</body>
+</html>
